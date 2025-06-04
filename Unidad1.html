@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 1 - Arquitectura de Computadoras</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-image: url('FondoUnidades.WEBP');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            color: white;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .titulo-unidad {
+            text-align: center;
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: #ff4444;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .contenido-tablas {
+            margin: 30px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 25px;
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        tr:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+
+        td:first-child {
+            font-weight: bold;
+            color: #ff9999;
+            width: 100px;
+        }
+
+        .btn-regresar {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #ff4444;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-regresar:hover {
+            background-color: #cc0000;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-container {
+            text-align: center;
+        }
+
+        /* Documentos sección */
+        .documentos-unidad {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .documentos-unidad h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #ff9999;
+        }
+
+        .document-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 15px 20px;
+            margin: 15px auto;
+            max-width: 400px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .document-title {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #ffcccc;
+            font-weight: bold;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+        }
+
+        .download-btn:hover {
+            background-color: #2980b9;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            th, td {
+                padding: 8px 10px;
+                font-size: 0.9rem;
+            }
+
+            .titulo-unidad {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo-unidad">UNIDAD 1</h1>
+
+        <div class="contenido-tablas">
+            <table>
+                <tr>  
+                    <td>1.1</td>
+                    <td>Modelos de Arquitectura de Cómputo</td>
+                </tr>
+                <tr>
+                    <td>1.1.1</td>
+                    <td>Clásicas</td>
+                </tr>
+                <tr>
+                    <td>1.1.2</td>
+                    <td>Segmentadas</td>
+                </tr>
+                <tr>
+                    <td>1.1.3</td>
+                    <td>De multiprocesamiento</td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td>1.2</td>
+                    <td>Análisis de los componentes</td>  
+                </tr>
+                <tr>
+                    <td>1.2.1</td>
+                    <td>Arquitecturas</td>
+                </tr>
+                <tr>
+                    <td>1.2.1.1</td>
+                    <td>Unidad central de procesamiento</td>
+                </tr>
+                <tr>
+                    <td>1.2.1.2</td>
+                    <td>Unidad Aritmética lógica</td>
+                </tr>
+                <tr>
+                    <td>1.2.1.3</td>
+                    <td>Registros</td>
+                </tr>
+                <tr>
+                    <td>1.2.1.4</td>
+                    <td>Buses</td>
+                </tr>
+                <tr>
+                    <td>1.2.2</td>
+                    <td>Memoria</td>
+                </tr>
+                <tr>
+                    <td>1.2.2.1</td>
+                    <td>Conceptos básicos del manejo de memoria</td>
+                </tr>
+                <tr>
+                    <td>1.2.2.2</td>
+                    <td>Memoria principal</td>
+                </tr>
+                <tr>
+                    <td>1.2.2.3</td>
+                    <td>Memoria caché</td>
+                </tr>
+                <tr>
+                    <td>1.2.3</td>
+                    <td>Manejo de la Entrada/Salida</td>
+                </tr>
+                <tr>
+                    <td>1.2.3.1</td>
+                    <td>Módulos de Entrada/Salida</td>
+                </tr>
+                <tr>
+                    <td>1.2.3.2</td>
+                    <td>Entrada/Salida programa</td>
+                </tr>
+                <tr>
+                    <td>1.2.3.3</td>
+                    <td>Entrada/Salida mediante interrupciones</td>
+                </tr>
+                <tr>
+                    <td>1.2.3.4</td>
+                    <td>Acceso directo a memoria</td>
+                </tr>
+                <tr>
+                    <td>1.2.3.5</td>
+                    <td>Canales y procesadores de Entrada/Salida</td>
+                </tr>
+                <tr>
+                    <td>1.2.4</td>
+                    <td>Buses</td>
+                </tr>
+                <tr>
+                    <td>1.2.4.1</td>
+                    <td>Tipos de buses</td>
+                </tr>
+                <tr>
+                    <td>1.2.4.2</td>
+                    <td>Estructura de los buses</td>
+                </tr>
+                <tr>
+                    <td>1.2.4.3</td>
+                    <td>Jerarquía de los buses</td>
+                </tr>
+                <tr>
+                    <td>1.2.5</td>
+                    <td>Interrupciones</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Documentos descargables -->
+        <div class="documentos-unidad">
+            <h2>Material de Apoyo</h2>
+            <div class="document-item">
+                <div class="document-title">Reporte de Placas</div>
+                <a href="Reporte-de-Placas.pdf" class="download-btn" download>Abrir</a>
+            </div>
+            <div class="document-item">
+                <div class="document-title">Procesadores</div>
+                <a href="Reporte-Procesadores-VGAS.pdf" class="download-btn" download>Abrir</a>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <a href="Indice.html" class="btn-regresar">Índice</a>
+        </div>
+    </div>
+</body>
+</html>
