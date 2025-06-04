@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portada - Arquitectura de Computadoras</title>
+  <style>
+    :root {
+      --fondo: #1e1e2f;
+      --texto: #f1f1f1;
+      --subtexto: #a8dadc;
+      --primario: #e63946;
+      --header-footer: #2a2a40;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--fondo);
+      background-image: url('Fondo_Proyecto.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      color: var(--texto);
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-color: var(--header-footer);
+    }
+
+    header img {
+      height: 150px;
+      width: auto;
+      transition: transform 0.3s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.05);
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .titulo {
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
+      font-weight: 700;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .subtitulo {
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      font-weight: 300;
+      margin-bottom: 10px;
+      color: var(--subtexto);
+    }
+
+    .nombre {
+      font-size: clamp(1.5rem, 3vw, 2.5rem);
+      font-weight: 400;
+      margin-bottom: 30px;
+      color: var(--texto);
+    }
+
+    .contacto-section {
+      margin: 20px 0;
+    }
+
+    .redes-sociales,
+    .contacto {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 15px;
+    }
+
+    .contacto img {
+      width: 60px;
+      height: 60px;
+      transition: transform 0.3s ease;
+    }
+
+    .contacto img:hover {
+      transform: scale(1.1);
+    }
+
+    .botones {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 30px 20px;
+    }
+
+    .boton {
+      padding: 12px 30px;
+      background-color: var(--header-footer);
+      color: var(--texto);
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: clamp(1rem, 2vw, 1.5rem);
+      transition: all 0.3s ease;
+      border: 2px solid var(--primario);
+    }
+
+    .boton:hover {
+      background-color: var(--primario);
+      transform: translateY(-3px);
+      color: white;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    footer {
+      background-color: var(--header-footer);
+      padding: 15px 0;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      header img {
+        height: 80px;
+      }
+
+      .botones {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="tec.webp" alt="Logo del TecNM">
+  </header>
+
+  <main>
+    <h2 class="subtitulo">Arquitectura de Computadoras</h2>
+    <p class="nombre">Ana Gabriela Guevara Martínez</p>
+
+    <div class="contacto-section">
+      <div class="contacto">
+        <a href="tel:+528443898528">
+          <img src="phone.webp" alt="Teléfono">
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <div class="botones">
+    <a href="https://saltillo.tecnm.mx" class="boton">Página ITS</a>
+    <a href="Indice.html" class="boton">Índice</a>
+  </div>
+
+  <footer>
+    <p>© 2025 Arquitectura de Computadoras - Instituto Tecnológico de Saltillo</p>
+  </footer>
+</body>
+</html>
